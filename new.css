@@ -1,0 +1,590 @@
+body,html{
+  font-family: arial, helvetica, sans-serif;
+  height:100%;
+}
+
+body{
+  overflow-x: visible;
+}
+/* ==== NAVBAR MODIFICATIONS ==== */
+.navbar li{
+  font-weight: bold;
+  padding: 0px 20px 0px 20px;
+}
+.navbar{
+  transition: 0.5s ease-in-out;
+  z-index: 9;
+}
+.navbar-brand{
+  font-weight: bolder !important;
+  font-size: 24px !important;
+  color: white !important;
+}
+
+.scrolle{
+  background-color: #262626;
+  position: fixed ;
+  width: 100% ;
+  z-index: 99 !important;
+  top: 0;
+}
+.wrapper{
+height:62px;
+margin-bottom: 8px;
+}
+
+/* .navbar li:after{
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: 0.5s;
+}
+
+.navbar li:hover:after{
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: white;
+  transition: 0.5;
+  vertical-align: middle;
+  line-height: 35px;
+} */
+
+
+.navbar .active a{
+  color: white !important;
+  vertical-align: middle;
+}
+
+.navbar li a{
+  color: #b0b0b0 !important;
+  transition: 0.5s;
+  vertical-align: middle;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.navbar li a:hover{
+  color: white !important;
+  transition: 0.5s;
+  border: 2px solid white;
+  transition: 0.5s;
+
+}
+
+.navbar .dm{
+  color: #b0b0b0 !important;
+  transition: 0.5s;
+  vertical-align: middle;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.navbar .dm:hover{
+  color: white !important;
+  transition: 0.5s;
+}
+
+.navbar .dm label{
+  margin-left: 8px;
+  margin-bottom: 0;
+}
+
+.navbar.collapsing,
+.navbar.show {
+    background-color:white !important;
+}
+
+
+/* .navbar-collapse{
+  background-color: #262626;
+  z-index: 9;
+} */
+
+/* ==== NAVBAR MODIFICATIONS END ==== */
+
+/* ===HERO IMAGE=== */
+#bg{
+
+background-color: #e8632e;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+/* ===HERO IMAGE END=== */
+
+
+/* .abox img{
+  transition: 0.5s;
+}
+
+.abox img:hover{
+  box-shadow: rgba(0, 0, 0, 1);
+  transition: 0.5s;
+  transform: scale(0.9,0.9);
+  position: relative;
+  z-index: 1;
+} */
+
+.tbox{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.tbox img{
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.bbox{
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  z-index: 1;
+  width:100%;
+  height:auto;
+  padding: 5px;
+  color: white;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.tbox button{
+  opacity: 0;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+  top:10%;
+  right:5%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transition: 0.5s ease-in-out;
+
+}
+.tbox img:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.tbox:hover .bbox, .tbox:hover button, .tbox:hover p{
+  opacity: 1;
+}
+
+.tbox p{
+  opacity:0;
+  position: absolute;
+  top:12%;
+  right:20%;
+  color: grey;
+  transition: 0.5s ease-in-out;
+}
+/* ===SCROLLBAR  CSS START=== */
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6b04d1;
+}
+
+/* ===SCROLLBAR  CSS END=== */
+
+
+/*=== FOOTER CSS START ===*/
+footer{
+  bottom:0;
+  height:auto;
+  padding-top:100px;
+  padding-bottom:100px;
+  width:100%;
+  background-color: #262626;
+  color: white;
+}
+
+footer h1{
+  color: white;
+  font-weight: 800;
+  font-size: 55px;
+  font-family: arial,'sans-serif';
+  text-align: center;
+  margin-bottom: 79px;
+}
+footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+footer ul li {
+  color:#787878;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  align-items: center;
+  padding: 10px;
+}
+
+footer ul li a{
+  color:#787878;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+footer ul li a:hover{
+  color: white;
+  text-decoration: none;
+
+}
+
+@media only screen  and (max-width: 520px) {
+
+  footer ul,  footer ul li{
+    display: block;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-nav{
+    background-color: #262626!important;
+    z-index: 9;
+  }
+}
+/* ===FOOTER CSS END */
+
+/* DARK MODE TOGGLE */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 14px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #7a04c9;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #7a04c9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.darkbg{
+background-color: black !important;
+}
+
+
+.card-img-top{
+  padding: 10px;
+  max-height: 250px;
+  height: auto;
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover .card-img-top{
+  box-shadow:  0 10px 10px rgba(29, 103, 179, 0.5);
+}
+
+.linkc{
+  color: #1c1c1c;
+}
+
+.linkc:hover{
+  transition: 0.5s ease-in-out;
+  color: #545454 !important;
+  text-decoration: none;
+}
+/* Ads Area Code */
+.adarea{
+  height: 100px;
+  width:auto;
+}
+
+.a1{
+  width: 100%!important;
+  height: auto;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.a2{
+  border-radius: 0px !important;
+  max-width: 100% !important;
+  height: auto;
+}
+
+.a3{
+  list-style-type: decimal !important;
+}
+
+.a4{
+  width:40%;
+  display: inline-block;
+  height:auto;
+  padding: 10px;
+  border: 1px solid grey;
+  margin: 5px;
+}
+
+
+.a1:hover{
+  box-shadow:  0 0 10px rgba(0, 0, 0, 1);
+}
+
+.quest{
+  background-color: #f05454;
+  color: white;
+  padding: 50px;
+}
+
+input[type="submit"], .atab{
+  width:100%;
+  height: auto;
+  padding: 10px;
+  background-color: #30475e;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border: 4px solid white;
+  transition: 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover, .atab:hover{
+  background-color: transparent;
+  color: #30475e;
+  border: 4px solid #30475e;
+}
+
+input[type="text"], input[type="number"], input[type="password"], input[type="email"], select, .casa{
+  width:100%;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid grey;
+  margin-bottom: 15px;
+  transition: 0.5s ease-in-out;
+}
+input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus, .casa:focus{
+  outline: none !important;
+  border: 2px solid #4287f5;
+}
+
+.custom-file-upload img{
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  color: white;
+  background: url("quizez/deskimage.jpg");
+  object-fit: cover;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+.custom-file-upload .fa {
+  font-size: 24px;
+  padding: 5px;
+  vertical-align: middle;
+}
+input[type="file"] {
+    display: none;
+}
+
+
+
+.zoom{
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .zoom{
+    width: 100%;
+  }
+}
+/* .carousel-control-next, .carousel-control-prev {
+  width: 4% ;
+  margin: 5px;
+}
+
+.ok{
+background-color: #32a852 !important;
+width:100%;
+height: auto;
+padding: 10px;
+color: white;
+font-size: 24px;
+font-weight: bold;
+border: 4px solid white;
+}
+
+
+.notok{
+background-color: #a83232 !important;
+width:100%;
+height: auto;
+padding: 10px;
+color: white;
+font-size: 24px;
+font-weight: bold;
+border: 4px solid white;
+} */
+
+.qut{
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.genroll{
+  width:100%;
+  height: auto;
+  padding: 5px;
+  background-color: #30475e;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border: 4px solid transparent;
+  transition: 0.5s ease-in-out;
+}
+.genroll:hover{
+  background-color: transparent;
+  color: #30475e;
+  border: 4px solid #30475e;
+}
+
+
+
+/* FORM CSS */
+
+.cont {
+width:100%;
+   height:auto;
+  display: block;
+  position: relative;
+  cursor: pointer;
+	vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.cont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  width:100%;
+  height: auto;
+  padding: 10px;
+  background-color: #30475e;
+  display: block;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border: 4px solid transparent;
+  transition: 0.5s ease-in-out;
+
+}
+/* On mouse-over, add a grey background color */
+.cont:hover input ~ .checkmark {
+  background-color: transparent;
+  color: #30475e;
+  border: 4px solid #30475e;
+}
+
+/* When the radio button is checked, add a blue background */
+.cont input:checked ~ .checkmark {
+  background-color: green;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.cont input:checked ~ .checkmark:after{
+  display: block;
+}
+
+
+.cont input:checked ~ .checkmark {
+  background-color: green;
+}
